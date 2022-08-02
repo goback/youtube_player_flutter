@@ -57,7 +57,8 @@ class _CurrentPositionState extends State<CurrentPosition> {
         _controller.value.position.inMilliseconds,
       ),
       style: const TextStyle(
-        color: Colors.white,
+        color: Colors.black,
+        // color: Colors.white,
         fontSize: 12.0,
       ),
     );
@@ -115,7 +116,8 @@ class _RemainingDurationState extends State<RemainingDuration> {
             (_controller.value.position.inMilliseconds),
       )}",
       style: const TextStyle(
-        color: Colors.white,
+        color: Colors.black,
+        // color: Colors.white,
         fontSize: 12.0,
       ),
     );

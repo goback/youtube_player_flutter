@@ -75,7 +75,11 @@ class _YoutubePlayerBuilderState extends State<YoutubePlayerBuilder>
           }
           return true;
         },
-        child: widget.player,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: widget.player,
+        ),
+        // child: widget.player,
       ),
     );
     final child = widget.builder(context, _player);
