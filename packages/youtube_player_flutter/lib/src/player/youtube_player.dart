@@ -302,7 +302,12 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
               ProgressBar(
                 controller: controller,
                 isExpanded: true,
-                colors: widget.progressColors,
+                colors: ProgressBarColors(
+                  backgroundColor: Colors.grey[400],
+                  handleColor: const Color(0xff6462d8),
+                  bufferedColor: Colors.grey,
+                  playedColor: const Color(0xff6462d8),
+                ),
               ),
               RemainingDuration(controller: controller),
             ],
